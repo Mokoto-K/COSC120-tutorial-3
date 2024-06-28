@@ -4,12 +4,12 @@
  * @param args
  */
 public class Dog {
-        private final String name;
-        private final long microchip;
-        private final String breed;
-        private final String sex;
+        private String name;
+        private long microchip;
+        private String breed;
+        private String sex;
         private boolean deSexed;
-        private final int age;
+        private int age;
 
         public Dog(String name, long microchip, String breed, String sex, boolean deSexed, int age) {
             this.name = name;
@@ -20,7 +20,10 @@ public class Dog {
             this.age = age;
         }
 
-        // Getters
+        public Dog(String breed, String sex, boolean deSexed, int minAge, int maxAge) {
+        }
+
+    // Getters
 
         /**
          * The getters for all the class attributes, all set to private at the moment
